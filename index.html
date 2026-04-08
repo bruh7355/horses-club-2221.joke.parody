@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horsses Club</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            background: linear-gradient(45deg, #ffccff, #ccffff);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #ff00aa;
+            margin-top: 40px;
+            transform: rotate(-2deg);
+        }
+
+        .horse {
+            font-size: 80px;
+            margin: 20px;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-15px); }
+        }
+
+        .join-button {
+            background: #ff00aa;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 10px 0 #990066;
+            transition: 0.1s;
+        }
+
+        .join-button:active {
+            transform: translateY(8px);
+            box-shadow: 0 2px 0 #990066;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .weird-box {
+            background: yellow;
+            margin: 40px auto;
+            padding: 20px;
+            width: 60%;
+            border: 5px dashed purple;
+            transform: rotate(1deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🐴 HORSSES CLUB 🐴</h1>
+
+    <div class="horse">🐴 🐴 🐴</div>
+
+    <p class="subtitle">Welcome to the most serious horsses club on the internet</p>
+
+    <div class="weird-box">
+        <p>We love horsses</p>
+        <p>We ride horsses</p>
+        <p>We ARE horsses</p>
+    </div>
+
+    <br>
+
+    <button class="join-button" onclick="joinClub()">
+        join the club with FaceStupid
+    </button>
+
+    <script>
+        function joinClub() {
+            window.location.href = "FaceStupids-account-creation.html";
+        }
+    </script>
+
+    <div class="horse">🐴 🐴 🐴</div>
+
+</body>
+</html>

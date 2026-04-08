@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FaceStupid - Create Account</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f0f2f5;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.container {
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+width: 300px;
+text-align: center;
+}
+
+h1 {
+color: #1877f2;
+margin-bottom: 5px;
+}
+
+.subtitle {
+color: #666;
+margin-bottom: 20px;
+}
+
+input {
+width: 100%;
+padding: 10px;
+margin: 5px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+button {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+background: #1877f2;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background: #145ec9;
+}
+
+.captcha {
+margin-top: 15px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+cursor: pointer;
+background: #fafafa;
+}
+
+.message {
+margin-top: 10px;
+color: red;
+font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>FaceStupid</h1>
+<div class="subtitle">Create your questionable account</div>
+
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<div class="captcha" onclick="captchaClick()">
+☐ I love horses soo much and horses are life and i am a horses i am a furry dress has horse!!!!i want to be in the club please
+</div>
+
+<div class="message" id="message"></div>
+
+<button>Create Account and join the horses club</button>
+
+</div>
+
+<script>
+function captchaClick() {
+document.getElementById("message").textContent = "oops captcha is saying that you love more your Family than horses. Please try again.";
+}
+</script>
+
+</body>
+</html>
